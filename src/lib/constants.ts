@@ -3,7 +3,7 @@
 // ============================================================
 export const FEATURES = {
   events: false,        // Sem eventos por enquanto
-  videos: false,        // Sem vídeos próprios ainda
+  videos: true,         // Sets gravados ao vivo
   epk: false,           // EPK ainda não montado
   newsletter: false,    // Newsletter ainda não configurada
   heroVideo: false,     // Vídeo de background do hero ainda não tem
@@ -120,6 +120,17 @@ export const TRACKS = [
 
 // Spotify artist embed ID
 export const SPOTIFY_ARTIST_ID = "6K6iCvUQxWnDnar9EQra86";
+
+// ============================================================
+// SETS — YouTube
+// ============================================================
+export const SETS = [
+  {
+    youtubeId: "NADVqe_4G7E",
+    title: "Tech House Set",
+    venue: "Live na mesa",
+  },
+] as const;
 
 // ============================================================
 // BOOKING
