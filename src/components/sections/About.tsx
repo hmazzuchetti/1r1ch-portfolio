@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
+import { withPrefix } from "@/lib/prefix";
 
 export function About() {
   return (
@@ -12,7 +13,7 @@ export function About() {
           <ScrollReveal direction="left">
             <div className="relative aspect-[3/4] max-w-md mx-auto lg:mx-0 overflow-hidden group">
               <Image
-                src="/images/artist-photo.jpeg"
+                src={withPrefix("/images/artist-photo.jpeg")}
                 alt="1R1CH"
                 fill
                 className="object-cover"

@@ -5,6 +5,7 @@ import { useRef } from "react";
 import Image from "next/image";
 import { MagneticButton } from "@/components/ui/MagneticButton";
 import { FEATURES } from "@/lib/constants";
+import { withPrefix } from "@/lib/prefix";
 
 export function Hero() {
   const containerRef = useRef<HTMLElement>(null);
@@ -84,7 +85,7 @@ export function Hero() {
           transition={{ delay: 0.1, duration: 1, ease: [0.22, 1, 0.36, 1] }}
         >
           <Image
-            src="/images/logo.png"
+            src={withPrefix("/images/logo.png")}
             alt="1R1CH"
             width={500}
             height={140}

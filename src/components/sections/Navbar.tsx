@@ -4,6 +4,7 @@ import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { NAV_LINKS, FEATURES } from "@/lib/constants";
 import Image from "next/image";
+import { withPrefix } from "@/lib/prefix";
 
 type FeatureKey = keyof typeof FEATURES;
 
@@ -47,7 +48,7 @@ export function Navbar() {
             data-cursor-hover
           >
             <Image
-              src="/images/logo2.png"
+              src={withPrefix("/images/logo2.png")}
               alt="1R1CH"
               width={40}
               height={40}

@@ -2,6 +2,7 @@
 
 import { SOCIAL_LINKS, SITE } from "@/lib/constants";
 import Image from "next/image";
+import { withPrefix } from "@/lib/prefix";
 
 export function Footer() {
   return (
@@ -11,7 +12,7 @@ export function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-4">
             <Image
-              src="/images/logo2.png"
+              src={withPrefix("/images/logo2.png")}
               alt="1R1CH"
               width={32}
               height={32}

@@ -3,6 +3,7 @@
 import { useRef } from "react";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
+import { withPrefix } from "@/lib/prefix";
 import { ScrollReveal } from "@/components/ui/ScrollReveal";
 
 const TOTAL = 5;
@@ -52,7 +53,7 @@ export function Collectors() {
                 <div className="relative w-[384px] h-[504px] sm:w-[456px] sm:h-[600px] md:w-[528px] md:h-[684px]">
                   {/* Frame PNG */}
                   <Image
-                    src="/images/frame-v2.png"
+                    src={withPrefix("/images/frame-v2.png")}
                     alt="Quadro de colecionador"
                     fill
                     className="object-contain relative z-10 drop-shadow-2xl"
@@ -65,7 +66,7 @@ export function Collectors() {
                       <div className="absolute inset-0 mesh-bg opacity-60" />
                       <div className="relative flex flex-col items-center justify-center gap-4 p-4 text-center">
                         <Image
-                          src="/images/logo.png"
+                          src={withPrefix("/images/logo.png")}
                           alt="1R1CH"
                           width={240}
                           height={68}
