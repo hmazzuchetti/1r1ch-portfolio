@@ -6,6 +6,7 @@ import { motion, useMotionValue, useSpring } from "framer-motion";
 interface MagneticButtonProps {
   children: React.ReactNode;
   className?: string;
+  wrapperClassName?: string;
   as?: "button" | "a";
   href?: string;
   target?: string;
@@ -16,6 +17,7 @@ interface MagneticButtonProps {
 export function MagneticButton({
   children,
   className = "",
+  wrapperClassName = "inline-block",
   as = "button",
   ...props
 }: MagneticButtonProps) {
@@ -47,7 +49,7 @@ export function MagneticButton({
       style={{ x: springX, y: springY }}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
-      className="inline-block"
+      className={wrapperClassName}
     >
       <Component
         className={className}

@@ -116,7 +116,7 @@ export function Hero() {
 
         {/* CTAs */}
         <motion.div
-          className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-10"
+          className="flex flex-col sm:flex-row items-center justify-center gap-6 mt-10"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.8, duration: 0.8 }}
@@ -124,14 +124,16 @@ export function Hero() {
           <MagneticButton
             as="a"
             href="#music"
-            className="px-8 py-3 bg-accent text-foreground font-mono text-sm uppercase tracking-[0.15em] hover:bg-accent-light transition-colors glow"
+            wrapperClassName="w-full sm:w-auto sm:inline-block"
+            className="block w-full sm:w-auto px-8 py-3 bg-accent text-foreground font-mono text-sm uppercase tracking-[0.15em] hover:bg-accent-light transition-colors glow text-center"
           >
             Ouvir Agora
           </MagneticButton>
           <MagneticButton
             as="a"
             href="#contact"
-            className="px-8 py-3 border border-border text-foreground font-mono text-sm uppercase tracking-[0.15em] hover:border-accent hover:text-accent-bright transition-colors"
+            wrapperClassName="w-full sm:w-auto sm:inline-block"
+            className="block w-full sm:w-auto px-8 py-3 border border-border text-foreground font-mono text-sm uppercase tracking-[0.15em] hover:border-accent hover:text-accent-bright transition-colors text-center"
           >
             Booking
           </MagneticButton>
