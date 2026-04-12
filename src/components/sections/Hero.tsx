@@ -89,7 +89,7 @@ export function Hero() {
             alt="1R1CH"
             width={500}
             height={140}
-            className="w-[70vw] md:w-[50vw] lg:w-[40vw] max-w-[500px] h-auto w-auto"
+            className="w-[70vw] md:w-[50vw] lg:w-[40vw] max-w-[500px] h-auto"
             priority
           />
         </motion.div>

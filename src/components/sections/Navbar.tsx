@@ -52,7 +52,7 @@ export function Navbar() {
               alt="1R1CH"
               width={40}
               height={40}
-              className="invert w-auto h-auto"
+              className="invert w-10 h-10 object-contain"
             />
           </button>
 
