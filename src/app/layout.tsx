@@ -94,7 +94,7 @@ export default function RootLayout({
       <head>
         <JsonLd />
       </head>
-      <body className="grain">{children}</body>
+      <body className="grain overflow-x-hidden">{children}</body>
     </html>
   );
 }
