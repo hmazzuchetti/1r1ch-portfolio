@@ -27,8 +27,8 @@ export function Collectors() {
   const shadowBlur = useTransform(scrollYProgress, [0, 0.5, 1], [30, 15, 20]);
 
   return (
-    <section ref={sectionRef} className="relative py-32 px-6 overflow-hidden">
-      <div className="section-divider max-w-7xl mx-auto mb-32" />
+    <section ref={sectionRef} className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6 overflow-hidden">
+      <div className="section-divider max-w-7xl mx-auto mb-16 md:mb-32" />
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
@@ -50,7 +50,7 @@ export function Collectors() {
                 className="relative"
               >
                 {/* Frame container */}
-                <div className="relative w-[384px] h-[504px] sm:w-[456px] sm:h-[600px] md:w-[528px] md:h-[684px]">
+                <div className="relative w-[260px] h-[341px] xs:w-[300px] xs:h-[394px] sm:w-[384px] sm:h-[504px] md:w-[456px] md:h-[600px] lg:w-[528px] lg:h-[684px]">
                   {/* Frame PNG */}
                   <Image
                     src={withPrefix("/images/frame-v2.png")}
@@ -105,7 +105,7 @@ export function Collectors() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.1}>
-              <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-[-0.03em] leading-[1.1] mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold uppercase tracking-[-0.03em] leading-[1.1] mb-8">
                 Os primeiros
                 <br />
                 <span className="gradient-text">ficam na historia</span>
@@ -145,7 +145,7 @@ export function Collectors() {
             <ScrollReveal delay={0.3}>
               <div className="mt-10 glass p-6 inline-block">
                 <div className="flex items-baseline gap-3">
-                  <span className="text-5xl md:text-6xl font-bold gradient-text tracking-[-0.04em]">
+                  <span className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold gradient-text tracking-[-0.04em]">
                     {COLLECTED}/{TOTAL}
                   </span>
                   <span className="font-mono text-sm text-foreground-muted">

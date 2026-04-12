@@ -115,7 +115,7 @@ export function Navbar() {
               <motion.button
                 key={link.href}
                 onClick={() => handleNavClick(link.href)}
-                className="text-3xl font-bold uppercase tracking-[-0.02em] text-foreground hover:text-accent-bright transition-colors"
+                className="text-xl sm:text-2xl md:text-3xl font-bold uppercase tracking-[-0.02em] text-foreground hover:text-accent-bright transition-colors"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 exit={{ opacity: 0, y: 20 }}

@@ -46,8 +46,8 @@ export function Contact() {
     "w-full bg-transparent border-b border-border px-0 py-3 font-mono text-sm text-foreground placeholder:text-foreground-dim focus:outline-none focus:border-accent transition-colors";
 
   return (
-    <section id="contact" className="relative py-32 px-6">
-      <div className="section-divider max-w-7xl mx-auto mb-32" />
+    <section id="contact" className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6">
+      <div className="section-divider max-w-7xl mx-auto mb-16 md:mb-32" />
 
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
@@ -59,7 +59,7 @@ export function Contact() {
               </p>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-[-0.03em] leading-[1.1] mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase tracking-[-0.03em] leading-[1.1] mb-8">
                 Book
                 <br />
                 <span className="gradient-text">1R1CH</span>
@@ -117,7 +117,7 @@ export function Contact() {
           <ScrollReveal direction="right">
             {isSubmitted ? (
               <motion.div
-                className="glass p-8 flex flex-col items-center justify-center min-h-[400px] text-center"
+                className="glass p-6 sm:p-8 flex flex-col items-center justify-center min-h-[300px] sm:min-h-[400px] text-center"
                 initial={{ opacity: 0, scale: 0.95 }}
                 animate={{ opacity: 1, scale: 1 }}
               >
@@ -144,7 +144,7 @@ export function Contact() {
                 </p>
               </motion.div>
             ) : (
-              <form onSubmit={handleSubmit} className="glass p-8 space-y-6">
+              <form onSubmit={handleSubmit} className="glass p-4 sm:p-6 md:p-8 space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <input
                     type="text"

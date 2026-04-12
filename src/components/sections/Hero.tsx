@@ -40,7 +40,7 @@ export function Hero() {
           <>
             <div className="absolute inset-0 mesh-bg" />
             <motion.div
-              className="absolute w-[600px] h-[600px] rounded-full opacity-20 blur-[120px]"
+              className="absolute w-[300px] h-[300px] sm:w-[450px] sm:h-[450px] md:w-[600px] md:h-[600px] rounded-full opacity-20 blur-[80px] sm:blur-[120px]"
               style={{ background: "var(--accent)" }}
               animate={{
                 x: ["-20%", "20%", "-20%"],
@@ -53,7 +53,7 @@ export function Hero() {
               }}
             />
             <motion.div
-              className="absolute right-0 bottom-0 w-[400px] h-[400px] rounded-full opacity-10 blur-[100px]"
+              className="absolute right-0 bottom-0 w-[200px] h-[200px] sm:w-[300px] sm:h-[300px] md:w-[400px] md:h-[400px] rounded-full opacity-10 blur-[60px] sm:blur-[100px]"
               style={{ background: "var(--accent-bright)" }}
               animate={{
                 x: ["10%", "-15%", "10%"],

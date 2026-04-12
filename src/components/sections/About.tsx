@@ -6,7 +6,7 @@ import { withPrefix } from "@/lib/prefix";
 
 export function About() {
   return (
-    <section id="about" className="relative py-32 px-6">
+    <section id="about" className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6">
       <div className="max-w-6xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           {/* Artist photo */}
@@ -38,7 +38,7 @@ export function About() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.1}>
-              <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-[-0.03em] leading-[1.1] mb-8">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase tracking-[-0.03em] leading-[1.1] mb-8">
                 Tech House de
                 <br />
                 <span className="gradient-text">Curitiba pro mundo</span>
@@ -68,7 +68,7 @@ export function About() {
             </ScrollReveal>
 
             <ScrollReveal delay={0.3}>
-              <div className="flex gap-12 mt-10">
+              <div className="flex flex-wrap gap-6 md:gap-12 mt-10">
                 <div>
                   <p className="text-3xl font-bold gradient-text">—</p>
                   <p className="font-mono text-xs text-foreground-dim uppercase tracking-widest mt-1">

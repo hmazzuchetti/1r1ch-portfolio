@@ -19,8 +19,8 @@ function SpotifyTrackEmbed({ trackId }: { trackId: string }) {
 
 export function Music() {
   return (
-    <section id="music" className="relative py-32 px-6">
-      <div className="section-divider max-w-7xl mx-auto mb-32" />
+    <section id="music" className="relative py-16 md:py-24 lg:py-32 px-4 sm:px-6">
+      <div className="section-divider max-w-7xl mx-auto mb-16 md:mb-32" />
 
       <div className="max-w-7xl mx-auto">
         <ScrollReveal>
@@ -29,12 +29,12 @@ export function Music() {
           </p>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
-          <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold uppercase tracking-[-0.03em] leading-[1.1] mb-4">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold uppercase tracking-[-0.03em] leading-[1.1] mb-4">
             Ultimos <span className="gradient-text">lancamentos</span>
           </h2>
         </ScrollReveal>
         <ScrollReveal delay={0.15}>
-          <p className="font-mono text-sm text-foreground-muted max-w-lg mb-16">
+          <p className="font-mono text-sm text-foreground-muted max-w-lg mb-8 md:mb-16">
             Ouca as tracks mais recentes direto no Spotify.
           </p>
         </ScrollReveal>
