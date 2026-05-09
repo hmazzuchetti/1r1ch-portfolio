@@ -38,7 +38,7 @@
   --font-mono: var(--font-space-mono);
 }
 
-* {
+.has-custom-cursor * {
   cursor: none;
 }
 
@@ -131,9 +131,56 @@ body {
   opacity: 0.3;
 }
 
+/* 100 Reais Note Effects */
+.note-container {
+  pointer-events: none;
+}
+
+.note-shadow {
+  box-shadow:
+    0 25px 60px rgba(0, 0, 0, 0.6),
+    0 10px 30px rgba(0, 0, 0, 0.4),
+    0 0 80px rgba(218, 165, 32, 0.12),
+    0 0 120px rgba(218, 165, 32, 0.06);
+}
+
+.note-shimmer {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+}
+
+.note-shimmer-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    105deg,
+    transparent 30%,
+    rgba(255, 255, 255, 0.08) 45%,
+    rgba(218, 165, 32, 0.12) 50%,
+    rgba(255, 255, 255, 0.08) 55%,
+    transparent 70%
+  );
+  animation: shimmer-sweep 5s ease-in-out infinite;
+  pointer-events: none;
+  border-radius: 0.5rem;
+}
+
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-120%);
+  }
+  40% {
+    transform: translateX(120%);
+  }
+  100% {
+    transform: translateX(120%);
+  }
+}
+
 /* Hide custom cursor on touch devices */
 @media (pointer: coarse) {
-  * {
+  .has-custom-cursor * {
     cursor: auto !important;
   }
 }

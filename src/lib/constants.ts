@@ -61,6 +61,7 @@ export const SOCIAL_LINKS = {
   spotify:
     "https://open.spotify.com/artist/6K6iCvUQxWnDnar9EQra86?si=wEuah3Q1SBmM3-tiCi2nPQ",
   youtube: "https://www.youtube.com/@1R1CH",
+  soundcloud: "https://soundcloud.com/1r1ch",
   appleMusic: "https://music.apple.com/us/artist/1r1ch/1877121491",
 } as const;
 
