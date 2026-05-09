@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useRouter } from "next/navigation";
 import { NAV_LINKS, FEATURES } from "@/lib/constants";
 import Image from "next/image";
 import { withPrefix } from "@/lib/prefix";
@@ -15,6 +16,7 @@ const activeLinks = NAV_LINKS.filter(
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const router = useRouter();
 
   useEffect(() => {
     const handleScroll = () => setIsScrolled(window.scrollY > 50);
@@ -24,8 +26,12 @@ export function Navbar() {
 
   const handleNavClick = (href: string) => {
     setIsMobileMenuOpen(false);
-    const el = document.querySelector(href);
-    el?.scrollIntoView({ behavior: "smooth" });
+    if (href.startsWith("#")) {
+      const el = document.querySelector(href);
+      el?.scrollIntoView({ behavior: "smooth" });
+      return;
+    }
+    router.push(withPrefix(href));
   };
 
   return (
@@ -48,11 +54,11 @@ export function Navbar() {
             data-cursor-hover
           >
             <Image
-              src={withPrefix("/images/logo2.png")}
+              src={withPrefix("/images/logo3.png")}
               alt="1R1CH"
               width={40}
               height={40}
-              className="invert w-10 h-10 object-contain"
+              className="w-10 h-10 object-contain"
             />
           </button>
 
