@@ -11,6 +11,7 @@ export const FEATURES = {
   contactForm: true,    // Formulário de booking
   music: true,          // Seção de músicas
   about: true,          // Seção about
+  linktree: true,       // Link para Linktree na bio
 } as const;
 
 // ============================================================
@@ -50,6 +51,7 @@ export const NAV_LINKS = [
   { label: "Eventos", href: "#events", feature: "events" as const },
   { label: "EPK", href: "#epk", feature: "epk" as const },
   { label: "Contato", href: "#contact", feature: "contactForm" as const },
+  { label: "LinkTree", href: "/linktree", feature: "linktree" as const },
 ] as const;
 
 // ============================================================

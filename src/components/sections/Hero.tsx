@@ -109,11 +109,11 @@ export function Hero() {
         >
           <div className="note-shimmer">
             <Image
-              src={withPrefix("/images/note-100.jpg")}
+              src={withPrefix("/images/note-100.png")}
               alt="1R1CH 100 Reais"
-              width={800}
+              width={1600}
               height={450}
-              className="w-[85vw] sm:w-[65vw] md:w-[55vw] lg:w-[45vw] max-w-[700px] h-auto rounded-lg note-shadow"
+              className="w-[90vw] sm:w-[65vw] md:w-[55vw] lg:w-[45vw] max-w-[800px] h-auto rounded-lg note-shadow"
               priority
             />
             {/* Shimmer sweep overlay */}
@@ -144,18 +144,18 @@ export function Hero() {
           />
         </motion.div>
 
+        {/* Spacer to push buttons below the note */}
+        <div className="h-[30vh] sm:h-[28vh] md:h-[25vh]" />
+
         {/* Tagline */}
         <motion.p
-          className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-accent-bright mb-2"
+          className="font-mono text-xs md:text-sm uppercase tracking-[0.3em] text-accent-bright mb-2 mt-40"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3, duration: 0.8 }}
         >
           Tech House de Curitiba para o mundo
         </motion.p>
-
-        {/* Spacer to push buttons below the note */}
-        <div className="h-[30vh] sm:h-[28vh] md:h-[25vh]" />
 
         {/* CTAs */}
         <motion.div
@@ -179,6 +179,15 @@ export function Hero() {
             className="block w-full sm:w-auto px-8 py-3 border border-border text-foreground font-mono text-sm uppercase tracking-[0.15em] hover:border-accent hover:text-accent-bright transition-colors text-center"
           >
             Booking
+          </MagneticButton>
+
+          <MagneticButton
+            as="a"
+            href="/linktree"
+            wrapperClassName="w-full sm:w-auto sm:inline-block"
+            className="block w-full sm:w-auto px-8 py-3 border border-border text-foreground font-mono text-sm uppercase tracking-[0.15em] hover:border-accent hover:text-accent-bright transition-colors text-center"
+          >
+            LinkTree
           </MagneticButton>
         </motion.div>
       </motion.div>

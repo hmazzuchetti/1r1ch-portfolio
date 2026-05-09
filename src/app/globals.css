@@ -147,7 +147,7 @@ body {
 .note-shimmer {
   position: relative;
   overflow: hidden;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
 }
 
 .note-shimmer-overlay {
