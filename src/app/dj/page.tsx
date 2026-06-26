@@ -54,37 +54,14 @@ export default function DJPage() {
 
       {/* ========== HERO ========== */}
       <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
-        {/* Background effects */}
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 mesh-bg" />
-          <motion.div
-            className="absolute left-1/2 top-1/3 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] rounded-full opacity-20 blur-[120px]"
-            style={{
-              background:
-                "radial-gradient(circle, #0d7377 0%, #14b8bd 40%, transparent 70%)",
-            }}
-            animate={{
-              scale: [1, 1.15, 1],
-              opacity: [0.15, 0.25, 0.15],
-            }}
-            transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-          />
-          <motion.div
-            className="absolute right-0 bottom-0 w-[400px] h-[400px] rounded-full opacity-10 blur-[100px]"
-            style={{
-              background:
-                "radial-gradient(circle, #14b8bd 0%, transparent 70%)",
-            }}
-            animate={{
-              x: ["10%", "-15%", "10%"],
-              y: ["5%", "-10%", "5%"],
-            }}
-            transition={{ duration: 12, repeat: Infinity, ease: "easeInOut" }}
-          />
-        </div>
+        {/* Banner photo background */}
+        <div
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${withPrefix("/images/dj-banner.jpg")})` }}
+        />
 
-        {/* Dark overlay */}
-        <div className="absolute inset-0 bg-black/30" />
+        {/* Dark gradient overlay */}
+        <div className="absolute inset-0 bg-gradient-to-b from-black/70 via-black/50 to-black/80" />
 
         {/* Content */}
         <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
