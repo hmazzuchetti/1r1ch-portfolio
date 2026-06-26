@@ -12,11 +12,11 @@ export function Footer() {
           {/* Logo */}
           <div className="flex items-center gap-4">
             <Image
-              src={withPrefix("/images/logo2.png")}
+              src={withPrefix("/images/logo3.png")}
               alt="1R1CH"
               width={32}
               height={32}
-              className="invert w-8 h-8 object-contain"
+              className="w-8 h-8 object-contain"
             />
             <div>
               <p className="font-bold uppercase tracking-[-0.02em]">1R1CH</p>

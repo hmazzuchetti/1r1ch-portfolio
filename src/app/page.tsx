@@ -6,6 +6,7 @@ import { About } from "@/components/sections/About";
 import { Collectors } from "@/components/sections/Collectors";
 import { Music } from "@/components/sections/Music";
 import { Videos } from "@/components/sections/Videos";
+import { Partnerships } from "@/components/sections/Partnerships";
 import { Events } from "@/components/sections/Events";
 import { EPK } from "@/components/sections/EPK";
 import { Contact } from "@/components/sections/Contact";
@@ -21,6 +22,7 @@ export default function Home() {
         <Collectors />
         {FEATURES.music && <Music />}
         {FEATURES.videos && <Videos />}
+        {FEATURES.partnerships && <Partnerships />}
         {FEATURES.events && <Events />}
         {FEATURES.epk && <EPK />}
         {FEATURES.contactForm && <Contact />}

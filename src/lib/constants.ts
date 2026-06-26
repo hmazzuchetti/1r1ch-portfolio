@@ -12,6 +12,7 @@ export const FEATURES = {
   music: true,          // Seção de músicas
   about: true,          // Seção about
   linktree: true,       // Link para Linktree na bio
+  partnerships: true,   // Seção de parcerias / cases de sucesso
 } as const;
 
 // ============================================================
@@ -48,6 +49,7 @@ export const NAV_LINKS = [
   { label: "Sobre", href: "#about", feature: "about" as const },
   { label: "Música", href: "#music", feature: "music" as const },
   { label: "Vídeos", href: "#videos", feature: "videos" as const },
+  { label: "Parcerias", href: "#parcerias", feature: "partnerships" as const },
   { label: "Eventos", href: "#events", feature: "events" as const },
   { label: "EPK", href: "#epk", feature: "epk" as const },
   { label: "Contato", href: "#contact", feature: "contactForm" as const },
@@ -139,3 +141,28 @@ export const SETS = [
 // BOOKING
 // ============================================================
 export const BOOKING_EMAIL = "henrique.mazzu@gmail.com";
+
+// ============================================================
+// PARCERIAS / CASES DE SUCESSO
+// ============================================================
+export const PARTNERSHIPS = [
+  {
+    trackName: "TBT",
+    spotifyId: "56HUfbgCRcdB96IYeqKXDS",
+    releaseDate: "8 de maio de 2026",
+    collaborators: [
+      {
+        name: "MC MAYAH",
+        role: "MC / Feat",
+        monthlyListeners: "+4M",
+        spotifyUrl: "https://open.spotify.com/artist/10mKIVPFtg42JIvttHQrzr",
+      },
+      {
+        name: "BK2P",
+        role: "Produtora",
+        monthlyListeners: "+600K",
+        spotifyUrl: "https://open.spotify.com/artist/47gch4yYiV3nWaETQKghkC",
+      },
+    ],
+  },
+] as const;
