@@ -5,7 +5,7 @@ import Image from "next/image";
 import { withPrefix } from "@/lib/prefix";
 import { SOCIAL_LINKS, SPOTIFY_ARTIST_ID } from "@/lib/constants";
 
-const WHATSAPP_NUMBER = "5541999999999"; // TODO: trocar pelo número real
+const WHATSAPP_NUMBER = "5541992731106";
 const WHATSAPP_MESSAGE = encodeURIComponent(
   "Oi! Vi seu site e quero saber sobre DJ grátis pra um evento. 🎧"
 );
